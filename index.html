@@ -15,7 +15,7 @@
       <nav>
         <ul class="header__links-list">
           <li class="header__links-list-item header__links-list-item_no-bullit">
-            <a href="#0" class="header__link_active">главная</a>
+            <a href="#0" class="header__link header__link_active">главная</a>
           </li>
           <li class="header__links-list-item">
             <a href="#0" class="header__link">посмотреть лоты</a>
@@ -53,7 +53,9 @@
           <p class="cover__description-text">
             Аукцион вещей, в которые никто не верил
           </p>
-          <button name="button" class="bet-button">Сделать ставку</button>
+          <button type="button" name="button" class="bet-button">
+            Сделать ставку
+          </button>
         </div>
       </section>
       <section class="lots">
@@ -66,11 +68,13 @@
                 <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
-                <p class="card__text lots__cards-text-film">
-                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-                  ставка, если бы вы не знали, что режиссёр — Пол Томас
-                  Андерсон?
-                </p>
+                <div class="card__text">
+                  <p>
+                    Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                    ставка, если бы вы не знали, что режиссёр — Пол Томас
+                    Андерсон?
+                  </p>
+                </div>
               </article>
             </a>
           </li>
@@ -81,14 +85,16 @@
                 <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
-                <p class="card__text lots__cards-text-book">
-                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и
-                  с переходами на древнеанглийский. В ней одновременно
-                  рассказывается о 16 июня 1904 года и об истории литературы,
-                  начиная с античных времён. И это всё накладывается на
-                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
-                  Джеймса Джойса?
-                </p>
+                <div class="card__text">
+                  <p>
+                    Объёмом почти в тысячу страниц. Иногда без знаков препинания
+                    и с переходами на древнеанглийский. В ней одновременно
+                    рассказывается о 16 июня 1904 года и об истории литературы,
+                    начиная с античных времён. И это всё накладывается на
+                    эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
+                    Джеймса Джойса?
+                  </p>
+                </div>
               </article>
             </a>
           </li>
@@ -99,12 +105,14 @@
                 <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
-                <p class="card__text lots__cards-text-picture">
-                  Ну действительно, там линия, тут кружочек, а здесь и вовсе
-                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
-                  котиков... Сколько бы вы на такое поставили, если бы не знали,
-                  что это — одна из революционных работ Кандинского?
-                </p>
+                <div class="card__text">
+                  <p>
+                    Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                    что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                    котиков... Сколько бы вы на такое поставили, если бы не
+                    знали, что это — одна из революционных работ Кандинского?
+                  </p>
+                </div>
               </article>
             </a>
           </li>
@@ -144,28 +152,30 @@
 
     <footer class="footer">
       <address class="address footer__address">
-        <a href="#0">+9 999 555 5555</a>
-        <a href="#0">info@sobaka.ge</a>
+        <a href="tel:+99995555555">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263- 265, Амстердам</p>
       </address>
 
       <nav class="footer__menu aligned-text_center">
         <ul class="footer__menu-list">
           <li>
-            <a href="#0" class="footer__menu-link_active">главная</a>
+            <a href="#0" class="footer__menu-link footer__menu-link_active"
+              >главная</a
+            >
           </li>
           <li>
-            <a href="#0">посмотреть лоты</a>
+            <a href="#0" class="footer__menu-link">посмотреть лоты</a>
           </li>
           <li>
-            <a href="#0">об аукционе</a>
+            <a href="#0" class="footer__menu-link">об аукционе</a>
           </li>
         </ul>
       </nav>
 
       <ul class="footer__social-list">
         <li class="footer__social-list-item">
-          <a class="footer__links" href="#0">
+          <a class="footer__links" href="#0" target="_blank">
             <img
               class="footer__social-icon"
               src="./images/yt.svg"
@@ -174,7 +184,7 @@
           </a>
         </li>
         <li class="footer__social-list-item">
-          <a class="footer__links" href="#0">
+          <a class="footer__links" href="#0" target="_blank">
             <img
               class="footer__social-icon"
               src="./images/vk.svg"
@@ -183,7 +193,7 @@
           </a>
         </li>
         <li class="footer__social-list-item">
-          <a class="footer__links" href="#0">
+          <a class="footer__links" href="#0" target="_blank">
             <img
               class="footer__social-icon"
               src="./images/pinterest.svg"
